@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+<title>图片裁剪工具</title>
+</head>
+<body>
+<div class="g-container">
+  <div class="m-part m-part0">
+    <img src="./assets/images/tlt.png" class="u-tlt">
+  </div>
+  <div class="m-part m-part1 m-wrap">
+    <div class="m-cropper J_files_container">
+      <input type="file" accept="image/png, image/jpeg, image/jpg" multiple class="u-input J_upload">
+      <div class="m-content">
+        <div class="u-icon">
+          <svg viewBox="0 0 1024 1024" class="" data-icon="inbox" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M885.2 446.3l-.2-.8-112.2-285.1c-5-16.1-19.9-27.2-36.8-27.2H281.2c-17 0-32.1 11.3-36.9 27.6L139.4 443l-.3.7-.2.8c-1.3 4.9-1.7 9.9-1 14.8-.1 1.6-.2 3.2-.2 4.8V830a60.9 60.9 0 0 0 60.8 60.8h627.2c33.5 0 60.8-27.3 60.9-60.8V464.1c0-1.3 0-2.6-.1-3.7.4-4.9 0-9.6-1.3-14.1zm-295.8-43l-.3 15.7c-.8 44.9-31.8 75.1-77.1 75.1-22.1 0-41.1-7.1-54.8-20.6S436 441.2 435.6 419l-.3-15.7H229.5L309 210h399.2l81.7 193.3H589.4zm-375 76.8h157.3c24.3 57.1 76 90.8 140.4 90.8 33.7 0 65-9.4 90.3-27.2 22.2-15.6 39.5-37.4 50.7-63.6h156.5V814H214.4V480.1z"></path></svg>
+        </div>
+        <p class="u-text">
+          点击选择图片或将需要裁剪的图片拖到此处。
+        </p>
+        <p class="u-hint J_count_container">已选择<span class="J_count">0</span>张</p>
+      </div>
+    </div>
+  </div>
+  <div class="m-part m-part3 m-wrap">
+    <table class="u-table">
+      <tr class="u-table-header">
+        <th class="r-1">文件名</th>
+        <th class="r-2">进度</th>
+        <th class="r-3"></th>
+      </tr>
+      <tbody class="u-table-body J_table_body">
+      </tbody>
+    </table>
+  </div>
+  <div class="m-part m-part4 m-wrap">
+    <div class="m-row">
+      <div class="m-input-group">
+        <label for="width">宽</label>
+        <input type="text" id="width" class="u-input J_w J_input" placeholder="请输入裁剪宽度" value="400">
+      </div>
+      <div class="m-input-group">
+        <label for="height">高</label>
+        <input type="text" id="height" class="u-input J_h J_input" placeholder="请输入裁剪高度" value="400">
+      </div>
+    </div>
+    <a href="javascript:;" class="u-btn J_start_cropper">开始裁剪</a>
+    <a href="javascript:;" class="u-btn f-success J_download_all f-hide">一键保存</a>
+  </div>
+  <div class="m-part m-part5">
+    <span>by zjhch123</span>
+  </div>
+</div>
+</body>
+</html>
